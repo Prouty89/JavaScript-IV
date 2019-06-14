@@ -56,13 +56,11 @@ class Student extends Person {
         this.className = stdAttributes.className
         this.favSubjects = stdAttributes.favSubjects
     }
-    /*
+    
     listsSubjects(){
-        this.favSubjects.forEach(element => {
-            console.log(element)
-            return element
-    */  //Had a difficult time here
-    //}
+        return this.favSubjects.map(element => element)
+      //Had a difficult time here
+    }
     PRAssignment(student, subject) {
         return `${student.name} has submitted a PR for ${subject}`
     }
@@ -178,7 +176,7 @@ blake.speak()//console.log?
 dan.speak()
 console.log(dan.demo('JavaScript IV'))
 console.log(dan.grade(jimmy, 'JavaScript!'))
-//console.log(jimmy.listsSubjects())
+console.log(javi.listsSubjects())
 console.log(isaiah.PRAssignment(david, 'Redux'))
 console.log(jimmy.sprintChallenge(javi, 'Advanced Javascript'))
 
